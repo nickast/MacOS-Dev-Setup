@@ -130,3 +130,37 @@ The DocBlockr package provides creation and code completion of comment blocks.
 3. Choose _Package Control: Install Package_;
 4. Find _SublimeLinter-contrib-eslint_ and hit _Enter_.
 
+#### Add PHP and JS Snippets
+
+##### PHP (break a php object into multiple lines)
+
+1. Open _Sublime Text 3_ ;
+2. Go to `Tools > Developer > New Snippet`;
+3. Copy
+  ```bash
+  <snippet>
+  <content><![CDATA[
+echo "<pre>".print_r(\$${1:this})."</pre>";
+]]></content>
+  <tabTrigger>pre</tabTrigger>
+  <scope>source.php</scope>
+</snippet>
+  ```
+4. Save it as ```pre-php.sublime-snippet```
+
+##### JS Stringify
+
+1. Open _Sublime Text 3_ ;
+2. Go to `Tools > Developer > New Snippet`;
+3. Copy
+  ```bash
+  <snippet>
+  <content><![CDATA[
+console.log(JSON.stringify(${1:this}, null, 2));
+]]></content>
+  <tabTrigger>cons</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
+  ```
+4. Save it as ```cons-js.sublime-snippet```
+
