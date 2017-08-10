@@ -140,7 +140,7 @@ The DocBlockr package provides creation and code completion of comment blocks.
   ```bash
   <snippet>
   <content><![CDATA[
-echo "<pre>".print_r(\$${1:this})."</pre>";
+echo "<pre>".print_r(\$${1:this}, true)."</pre>";
 ]]></content>
   <tabTrigger>pre</tabTrigger>
   <scope>source.php</scope>
